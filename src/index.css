@@ -53,3 +53,8 @@ ul {
   margin: 0;
   padding: 0;
 }
+#root {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 50px 40px;
+}
