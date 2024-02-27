@@ -6,19 +6,8 @@ import { useDispatch } from 'react-redux';
 import { deleteContact } from '../../redux/operations';
 
 export const ContactList = () => {
-  // const filters = useSelector(getFilter);
   const dispatch = useDispatch();
   const contacts = useSelector(selectVisibleContact);
-
-  // let filtredContacts = [];
-  // if (contacts.length > 0)
-  //   filtredContacts = contacts.filter(
-  //     contact =>
-  //       contact.name
-  //         .toLowerCase()
-  //         .split(` `)
-  //         .filter(n => n.startsWith(filters.filter.toLowerCase())).length > 0
-  //   );
 
   const handleDeleteClick = e => {
     dispatch(deleteContact(e.target.dataset.id));
